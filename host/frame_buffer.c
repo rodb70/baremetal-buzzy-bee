@@ -97,7 +97,7 @@ void setPixel(int row, int col, uint16_t color)
     }
 }
 
-void drawRectangle(int row, int col, int width, int height, unsigned short color)
+void drawRectangle(int col, int row, int width, int height, unsigned short color)
 {
     int endw = row + width;
     int endh = col + height;
@@ -152,7 +152,7 @@ void drawImage(int row, int col, int width, int height, const unsigned short *im
     }
 }
 
-void drawBuzz(int x, int y, const uint16_t *buzz)
+void drawBuzz(int y, int x, const uint16_t *buzz)
 {
     drawImage( x, y, BUZZ_WIDTH, BUZZ_HEIGHT, buzz );
 }

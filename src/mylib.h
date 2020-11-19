@@ -146,10 +146,10 @@ void removeProjectile(PROJECTILE *p);
 // DRAWING PROTOTYPES
 void setPixel(int row, int col, unsigned short color);
 void drawChar(int row, int col, char ch, unsigned short color);
-void drawString(int row, int col, char str[], unsigned short color);
-void drawBuzz(int x, int y, const uint16_t *buzz);
-void drawRectangle(int row, int col, int width, int height, volatile uint16_t color);
-void drawImage(int row, int col, int width, int height, const uint16_t *image);
+void drawString(int col, int row, char str[], unsigned short color);
+void drawBuzz(int y, int x, const uint16_t *buzz);
+void drawRectangle(int col, int row, int width, int height, unsigned short color);
+void drawImage(int row, int col, int width, int height, const unsigned short *image);
 
 // OTHER PROTOTYPES
 void waitForVblank(void);
